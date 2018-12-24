@@ -1,5 +1,6 @@
 {
   "projects": {
-    "production": "anyway-mun"
+    "production": "anyway-mun",
+    "default": "anyway-mun"
   }
 }
