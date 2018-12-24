@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "classnames": "^2.2.6",
+    "firebase": "^5.7.1",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "^6.0.0",
+    "react-redux-firebase": "^2.2.5",
+    "react-scripts": "latest",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +29,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/ronish31/anyway-mun.git",
+  "author": "ronish31 <ronish31@gmail.com>",
+  "license": "MIT"
 }
