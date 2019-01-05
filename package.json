@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@expo/vector-icons": "^8.0.0",
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
     "classnames": "^2.2.6",
+    "expo": "^31.0.6",
     "firebase": "^5.7.1",
     "prop-types": "latest",
     "react": "latest",
@@ -33,5 +35,8 @@
   "main": "index.js",
   "repository": "https://github.com/ronish31/anyway-mun.git",
   "author": "ronish31 <ronish31@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.3"
+  }
 }
