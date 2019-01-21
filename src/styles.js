@@ -56,6 +56,20 @@ const styles = theme => ({
       }),
       marginLeft: 0,
     },
+    card: {
+      maxWidth: 345,
+    },
+    cardShift: {
+      width: `calc(100% - ${drawerWidth}px)`,
+      marginRight: drawerWidth,
+      transition: theme.transitions.create(['margin', 'width'], {
+        easing: theme.transitions.easing.easeOut,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+    },
+    media: {
+      height: 140,
+    },
   });
 
   export default styles;

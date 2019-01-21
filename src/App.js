@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Layout classes={classes}>
-          <HomePage/>
+          <HomePage classes={classes}/>
           </Layout>
       </Provider>
     );

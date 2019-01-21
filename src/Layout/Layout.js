@@ -4,9 +4,7 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import ListItemHoverable from './ListItemHoverable';
 import List from '@material-ui/core/List';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
@@ -19,6 +17,7 @@ import TimelineIcon from '@material-ui/icons/Timeline';
 import BusinessIcon from '@material-ui/icons/Business';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
+import pic from './Bat-Yam.png';
 //import { withTheme } from "@callstack/react-theme-provider";
 //import { Foundation } from '@expo/vector-icons';
 //import Ionicons from "react-native-vector-icons/Ionicons";
@@ -26,35 +25,36 @@ import classNames from 'classnames';
 
 const MenuButtons = {
     button1: {
-        icon: BusinessIcon,
+        icon: <BusinessIcon />,
         title: "דו'ח עירוני",
         divider: false
         //path:
     },
 
     button2: {
-        icon: TimelineIcon,
+        icon: <TimelineIcon />,
         title: "דו'ח השוואתי",
         divider: true
         //path:
     },
 
     button3: {
-        icon: PlaceIcon,
+        icon: <PlaceIcon />,
         title: "סקירת מפה",
         divider: true
         //path:
     },
 
     button4: {
-        icon: NotificationsIcon,
+        icon: <NotificationsIcon />,
         title: "מבזקים",
-        divider: true
+        divider: true,
+        style: { textAlign: "right" }
         //path:
     },
 
     button5: {
-        icon: SettingsIcon,
+        icon: <SettingsIcon />,
         title: "הגדרות משתמש",
         divider: true
         //path:
@@ -72,19 +72,17 @@ class Layout extends Component {
     handleDrawerClose = () => {
         this.setState({ open: false });
     };
-    //<styles( withStyles ) />;
-    render() {
+
+    
+     render() {
         const { children, classes } = this.props;
         const { open } = this.state;
-        const MenuElements = Object.values(MenuButtons).map((value, index) => <ListItem ley={index}>
-            <ListItemIcon>
-                {value.icon}
-            </ListItemIcon>
-            <ListItemText>
-                {value.title}
-            </ListItemText>
-            {value.divider && <Divider />}
-        </ListItem>);
+        const MenuElements = Object.values(MenuButtons).map((value, index) => {
+            const dividerElement = value.divider ? <Divider key={index + 'divider'} /> : null;
+            return [<ListItemHoverable key={index} icon={value.icon} title={value.title} />, dividerElement];
+        });
+        const childrenWithProps = React.Children.map(children, child =>
+            React.cloneElement(child, { appShiftBar: this.state.open }));
         return (<div>
             <AppBar position="fixed"
                 className={classNames(classes.appBar, {
@@ -101,7 +99,7 @@ class Layout extends Component {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" color="inherit" noWrap>
-                        Persistent drawer
+                        עיריית בת ים
             </Typography>
                 </Toolbar>
             </AppBar>
@@ -119,10 +117,20 @@ class Layout extends Component {
                 </div>
                 <Divider />
                 <List>
+                    <div style={{ textAlign: "center", marginBottom: "10px", marginTop: "10px" }}>
+                        <img src={pic} alt="pic" width="100px" height="150px" />
+                    </div>
+                    <Divider />
                     {MenuElements}
                 </List>
-            </Drawer>{children}</div>)
-
+            </Drawer>
+            {/* <div>
+            const childrenWithProps = React.Children.map(children, child =>
+                React.cloneElement(child, { AppShiftBar: this.state })
+            );
+            </div> */}
+            {childrenWithProps}
+        </div>)
     }
 }
 
