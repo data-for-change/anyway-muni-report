@@ -57,7 +57,9 @@ const styles = theme => ({
       marginLeft: 0,
     },
     card: {
-      maxWidth: 345,
+      maxWidth: 1300,
+      maxHeight: 1000,
+      marginTop: 200,
     },
     cardShift: {
       width: `calc(100% - ${drawerWidth}px)`,
@@ -66,9 +68,6 @@ const styles = theme => ({
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
       }),
-    },
-    media: {
-      height: 140,
     },
   });
 

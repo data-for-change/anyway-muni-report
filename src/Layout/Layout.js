@@ -83,8 +83,9 @@ class Layout extends Component {
         });
         const childrenWithProps = React.Children.map(children, child =>
             React.cloneElement(child, { appShiftBar: this.state.open }));
+        const citySymbolStyle = { textAlign: "center", marginBottom: "10px", marginTop: "10px" };
         return (<div>
-            <AppBar position="fixed"
+            <AppBar position="fixed" 
                 className={classNames(classes.appBar, {
                     [classes.appBarShift]: open,
                 })}
@@ -117,18 +118,13 @@ class Layout extends Component {
                 </div>
                 <Divider />
                 <List>
-                    <div style={{ textAlign: "center", marginBottom: "10px", marginTop: "10px" }}>
+                    <div style={citySymbolStyle}>
                         <img src={pic} alt="pic" width="100px" height="150px" />
                     </div>
                     <Divider />
                     {MenuElements}
                 </List>
             </Drawer>
-            {/* <div>
-            const childrenWithProps = React.Children.map(children, child =>
-                React.cloneElement(child, { AppShiftBar: this.state })
-            );
-            </div> */}
             {childrenWithProps}
         </div>)
     }
