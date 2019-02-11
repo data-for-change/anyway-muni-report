@@ -47,27 +47,18 @@ const styles = theme => ({
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
-      marginLeft: -drawerWidth,
     },
     contentShift: {
       transition: theme.transitions.create('margin', {
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
       }),
-      marginLeft: 0,
+      marginRight: drawerWidth,
     },
     card: {
-      maxWidth: 1300,
-      maxHeight: 1000,
-      marginTop: 200,
-    },
-    cardShift: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginRight: drawerWidth,
-      transition: theme.transitions.create(['margin', 'width'], {
-        easing: theme.transitions.easing.easeOut,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
+      maxWidth: '100%',
+      Height: '100%',
+      position: 'relative'
     },
   });
 

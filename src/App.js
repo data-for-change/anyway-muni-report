@@ -46,8 +46,8 @@ class App extends Component {
     const {classes} = this.props;
     return (
       <Provider store={store}>
-        <Layout classes={classes}>
-          <HomePage classes={classes}/>
+         <Layout classes={classes}>
+           <HomePage classes={classes}/>
           </Layout>
       </Provider>
     );

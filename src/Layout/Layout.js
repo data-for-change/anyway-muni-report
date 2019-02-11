@@ -15,9 +15,9 @@ import PlaceIcon from '@material-ui/icons/Map';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import BusinessIcon from '@material-ui/icons/Business';
-import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import pic from './Bat-Yam.png';
+import Page from './Page';
 //import { withTheme } from "@callstack/react-theme-provider";
 //import { Foundation } from '@expo/vector-icons';
 //import Ionicons from "react-native-vector-icons/Ionicons";
@@ -82,7 +82,7 @@ class Layout extends Component {
             return [<ListItemHoverable key={index} icon={value.icon} title={value.title} />, dividerElement];
         });
         const childrenWithProps = React.Children.map(children, child =>
-            React.cloneElement(child, { appShiftBar: this.state.open }));
+            React.cloneElement(child, { open: this.state.open, classes:classes }));
         const citySymbolStyle = { textAlign: "center", marginBottom: "10px", marginTop: "10px" };
         return (<div>
             <AppBar position="fixed" 
@@ -125,7 +125,9 @@ class Layout extends Component {
                     {MenuElements}
                 </List>
             </Drawer>
-            {childrenWithProps}
+            <Page classes={classes} open={open}>
+              {childrenWithProps}
+            </Page>
         </div>)
     }
 }

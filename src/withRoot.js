@@ -8,6 +8,13 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createMuiTheme({
+  overrides: {
+    MuiCardContent: {
+      root: {
+        padding: 0
+      },
+    },
+  },
   direction: 'rtl',
   palette: {
     primary: {
