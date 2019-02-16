@@ -4,6 +4,7 @@ const drawerWidth = 240;
 const styles = theme => ({
     root: {
       display: 'flex',
+      flexGrow: 1
     },
     appBar: {
       transition: theme.transitions.create(['margin', 'width'], {
@@ -57,9 +58,18 @@ const styles = theme => ({
     },
     card: {
       maxWidth: '100%',
-      Height: '100%',
-      position: 'relative'
+      maxHeight: '100%',
+      position: 'relative',
+      textAlign: 'center',
+      margin: '10px',
+    },
+    container: {
+      flex: 'nowrap',
+      display: 'inline-flex',
     },
   });
 
   export default styles;
+
+
+

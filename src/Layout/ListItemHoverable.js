@@ -19,16 +19,16 @@ class ListItemHoverable extends Component {
     }
 
     render (){
-        const {icon, title} = this.props;
+        const {icon, title, marginBottom, marginTop} = this.props;
         return  (<ListItem style={{ background: this.state.hover ? '#2196f3' : 'inherit'}}
             onMouseEnter={this.hoverOn} 
             onMouseLeave={this.hoverOff}
             selected={this.state.hover}
         >
-            <ListItemIcon>
+            <ListItemIcon style={{marginBottom: marginBottom, marginTop: marginTop}}>
                 {icon}
             </ListItemIcon>
-            <ListItemText style={{textAlign: "right", cursor: "pointer", color: this.state.hover ? 'white !important' : 'inherit'}}
+            <ListItemText style={{textAlign: "right", cursor: "pointer", marginBottom: marginBottom, marginTop: marginTop, color: this.state.hover ? 'white !important' : 'inherit'}}
              onMouseEnter={this.hoverOn} 
              onMouseLeave={this.hoverOff}
              >

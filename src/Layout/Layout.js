@@ -18,6 +18,9 @@ import BusinessIcon from '@material-ui/icons/Business';
 import classNames from 'classnames';
 import pic from './Bat-Yam.png';
 import Page from './Page';
+import { setAutoFreeze } from 'immer';
+const green = '#39D1B4';
+
 //import { withTheme } from "@callstack/react-theme-provider";
 //import { Foundation } from '@expo/vector-icons';
 //import Ionicons from "react-native-vector-icons/Ionicons";
@@ -27,21 +30,28 @@ const MenuButtons = {
     button1: {
         icon: <BusinessIcon />,
         title: "דו'ח עירוני",
-        divider: false
+        divider: false,
+        marginBottom: '-10px',
+        marginTop: '10px',
         //path:
     },
 
     button2: {
         icon: <TimelineIcon />,
         title: "דו'ח השוואתי",
-        divider: true
+        divider: true,
+        marginBottom: '10px',
+        marginTop: '-10px',
         //path:
     },
 
     button3: {
         icon: <PlaceIcon />,
         title: "סקירת מפה",
-        divider: true
+        divider: true,
+        color: green,
+        marginBottom: '0px',
+        marginTop: 'auto',
         //path:
     },
 
@@ -49,14 +59,18 @@ const MenuButtons = {
         icon: <NotificationsIcon />,
         title: "מבזקים",
         divider: true,
-        style: { textAlign: "right" }
+        marginBottom: '0px',
+        marginTop: 'auto',
+        //style: { textAlign: "right" }
         //path:
     },
 
     button5: {
         icon: <SettingsIcon />,
         title: "הגדרות משתמש",
-        divider: true
+        divider: true,
+        marginBottom: '0px',
+        marginTop: 'auto',
         //path:
     }
 }
@@ -79,7 +93,7 @@ class Layout extends Component {
         const { open } = this.state;
         const MenuElements = Object.values(MenuButtons).map((value, index) => {
             const dividerElement = value.divider ? <Divider key={index + 'divider'} /> : null;
-            return [<ListItemHoverable key={index} icon={value.icon} title={value.title} />, dividerElement];
+            return [<ListItemHoverable key={index} icon={value.icon} title={value.title} color={value.color} marginBottom={value.marginBottom}  marginTop={value.marginTop}/>, dividerElement];
         });
         const childrenWithProps = React.Children.map(children, child =>
             React.cloneElement(child, { open: this.state.open, classes:classes }));
