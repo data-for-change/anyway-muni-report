@@ -61,7 +61,6 @@ const styles = theme => ({
       maxHeight: '100%',
       position: 'relative',
       textAlign: 'center',
-      margin: '10px',
     },
     container: {
       flex: 'nowrap',

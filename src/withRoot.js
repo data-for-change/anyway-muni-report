@@ -11,7 +11,7 @@ const theme = createMuiTheme({
   overrides: {
     MuiCardContent: {
       root: {
-        padding: 0
+        padding: 0,
       },
     },
   },

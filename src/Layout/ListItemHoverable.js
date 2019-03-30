@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -28,7 +27,7 @@ class ListItemHoverable extends Component {
             <ListItemIcon style={{marginBottom: marginBottom, marginTop: marginTop}}>
                 {icon}
             </ListItemIcon>
-            <ListItemText style={{textAlign: "right", cursor: "pointer", marginBottom: marginBottom, marginTop: marginTop, color: this.state.hover ? 'white !important' : 'inherit'}}
+            <ListItemText style={{fontFamily: 'Calibril.tff', textAlign: "right", cursor: "pointer", marginBottom: marginBottom, marginTop: marginTop, color: this.state.hover ? 'white !important' : 'inherit'}}
              onMouseEnter={this.hoverOn} 
              onMouseLeave={this.hoverOff}
              >
