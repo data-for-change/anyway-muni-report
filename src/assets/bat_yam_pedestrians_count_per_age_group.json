@@ -1,0 +1,77 @@
+[{
+    "age_group": "1",
+    "age_group_hebrew": "00-04",
+    "count": "37"
+}, {
+    "age_group": "2",
+    "age_group_hebrew": "05-09",
+    "count": "109"
+}, {
+    "age_group": "3",
+    "age_group_hebrew": "10-14",
+    "count": "145"
+}, {
+    "age_group": "4",
+    "age_group_hebrew": "15-19",
+    "count": "99"
+}, {
+    "age_group": "5",
+    "age_group_hebrew": "20-24",
+    "count": "112"
+}, {
+    "age_group": "6",
+    "age_group_hebrew": "25-29",
+    "count": "80"
+}, {
+    "age_group": "7",
+    "age_group_hebrew": "30-34",
+    "count": "83"
+}, {
+    "age_group": "8",
+    "age_group_hebrew": "35-39",
+    "count": "91"
+}, {
+    "age_group": "9",
+    "age_group_hebrew": "40-44",
+    "count": "85"
+}, {
+    "age_group": "10",
+    "age_group_hebrew": "45-49",
+    "count": "71"
+}, {
+    "age_group": "11",
+    "age_group_hebrew": "50-54",
+    "count": "92"
+}, {
+    "age_group": "12",
+    "age_group_hebrew": "55-59",
+    "count": "126"
+}, {
+    "age_group": "13",
+    "age_group_hebrew": "60-64",
+    "count": "137"
+}, {
+    "age_group": "14",
+    "age_group_hebrew": "65-69",
+    "count": "138"
+}, {
+    "age_group": "15",
+    "age_group_hebrew": "70-74",
+    "count": "118"
+}, {
+    "age_group": "16",
+    "age_group_hebrew": "75-79",
+    "count": "106"
+}, {
+    "age_group": "17",
+    "age_group_hebrew": "80-84",
+    "count": "97"
+}, {
+    "age_group": "18",
+    "age_group_hebrew": "85+",
+    "count": "50"
+}, {
+    "age_group": "99",
+    "age_group_hebrew": "לא ידוע",
+    "count": "141"
+}]

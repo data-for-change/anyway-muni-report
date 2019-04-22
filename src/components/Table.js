@@ -4,6 +4,7 @@ import ReactTable from "react-table";
 
 //import styles
 import "react-table/react-table.css";
+import "./Table.css";
 
 export default class Table extends Component {
 
@@ -30,6 +31,7 @@ export default class Table extends Component {
         style={{
           height// This will force the table body to overflow and scroll, since there is not enough room
         }}
+        resizable={false}
         className="-striped -highlight"
         noDataText="No data found"
       />
