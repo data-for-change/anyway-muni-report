@@ -1,0 +1,194 @@
+[
+  {
+    "accident_year": "2008",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "2"
+  },
+  {
+    "accident_year": "2008",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "8"
+  },
+  {
+    "accident_year": "2008",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "218"
+  },
+  {
+    "accident_year": "2009",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "1"
+  },
+  {
+    "accident_year": "2009",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "11"
+  },
+  {
+    "accident_year": "2009",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "158"
+  },
+  {
+    "accident_year": "2010",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "1"
+  },
+  {
+    "accident_year": "2010",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "7"
+  },
+  {
+    "accident_year": "2010",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "186"
+  },
+  {
+    "accident_year": "2011",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "2"
+  },
+  {
+    "accident_year": "2011",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "7"
+  },
+  {
+    "accident_year": "2011",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "155"
+  },
+  {
+    "accident_year": "2012",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "3"
+  },
+  {
+    "accident_year": "2012",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "12"
+  },
+  {
+    "accident_year": "2012",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "166"
+  },
+  {
+    "accident_year": "2013",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "2"
+  },
+  {
+    "accident_year": "2013",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "13"
+  },
+  {
+    "accident_year": "2013",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "145"
+  },
+  {
+    "accident_year": "2014",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "1"
+  },
+  {
+    "accident_year": "2014",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "17"
+  },
+  {
+    "accident_year": "2014",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "161"
+  },
+  {
+    "accident_year": "2015",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "2"
+  },
+  {
+    "accident_year": "2015",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "11"
+  },
+  {
+    "accident_year": "2015",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "163"
+  },
+  {
+    "accident_year": "2016",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "4"
+  },
+  {
+    "accident_year": "2016",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "13"
+  },
+  {
+    "accident_year": "2016",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "161"
+  },
+  {
+    "accident_year": "2017",
+    "injury_severity": "1",
+    "injury_severity_hebrew": "הרוג",
+    "count": "1"
+  },
+  {
+    "accident_year": "2017",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "15"
+  },
+  {
+    "accident_year": "2017",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "126"
+  },
+  {
+    "accident_year": "2018",
+    "injury_severity": "2",
+    "injury_severity_hebrew": "פצוע קשה",
+    "count": "12"
+  },
+  {
+    "accident_year": "2018",
+    "injury_severity": "3",
+    "injury_severity_hebrew": "פצוע קל",
+    "count": "133"
+  }
+]

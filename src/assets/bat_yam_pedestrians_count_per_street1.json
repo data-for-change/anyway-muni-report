@@ -1,0 +1,578 @@
+[
+  {
+    "street1_hebrew": "בלפור",
+    "count": "181"
+  },
+  {
+    "street1_hebrew": "שד יוספטל גיורא",
+    "count": "131"
+  },
+  {
+    "street1_hebrew": "דרך בן גוריון",
+    "count": "100"
+  },
+  {
+    "street1_hebrew": "שד העצמאות",
+    "count": "85"
+  },
+  {
+    "street1_hebrew": "רוטשילד",
+    "count": "81"
+  },
+  {
+    "street1_hebrew": "מבצע סיני",
+    "count": "62"
+  },
+  {
+    "street1_hebrew": "הרב ניסנבוים יצחק",
+    "count": "60"
+  },
+  {
+    "street1_hebrew": "כצנלסון ברל",
+    "count": "58"
+  },
+  {
+    "street1_hebrew": "הרצל",
+    "count": "53"
+  },
+  {
+    "street1_hebrew": "ירושלים",
+    "count": "51"
+  },
+  {
+    "street1_hebrew": "הנביאים",
+    "count": "44"
+  },
+  {
+    "street1_hebrew": "דניאל",
+    "count": "36"
+  },
+  {
+    "street1_hebrew": "פרנק אנה",
+    "count": "36"
+  },
+  {
+    "street1_hebrew": "קרן קימת לישראל",
+    "count": "33"
+  },
+  {
+    "street1_hebrew": "רזיאל דוד",
+    "count": "33"
+  },
+  {
+    "street1_hebrew": "",
+    "count": "32"
+  },
+  {
+    "street1_hebrew": "אנילביץ",
+    "count": "30"
+  },
+  {
+    "street1_hebrew": "הקוממיות",
+    "count": "24"
+  },
+  {
+    "street1_hebrew": "בר אילן",
+    "count": "23"
+  },
+  {
+    "street1_hebrew": "החשמונאים",
+    "count": "21"
+  },
+  {
+    "street1_hebrew": "העבודה",
+    "count": "20"
+  },
+  {
+    "street1_hebrew": "כ\"ט בנובמבר",
+    "count": "20"
+  },
+  {
+    "street1_hebrew": "הרב לוי",
+    "count": "19"
+  },
+  {
+    "street1_hebrew": "החרושת",
+    "count": "16"
+  },
+  {
+    "street1_hebrew": "אורט ישראל",
+    "count": "16"
+  },
+  {
+    "street1_hebrew": "הרב עוזיאל",
+    "count": "14"
+  },
+  {
+    "street1_hebrew": "כהן אלי",
+    "count": "14"
+  },
+  {
+    "street1_hebrew": "המעפילים",
+    "count": "14"
+  },
+  {
+    "street1_hebrew": "ארלוזורוב",
+    "count": "13"
+  },
+  {
+    "street1_hebrew": "הלפר",
+    "count": "12"
+  },
+  {
+    "street1_hebrew": "דנין יחזקאל",
+    "count": "12"
+  },
+  {
+    "street1_hebrew": "נורדאו מקס",
+    "count": "12"
+  },
+  {
+    "street1_hebrew": "ז'בוטינסקי",
+    "count": "11"
+  },
+  {
+    "street1_hebrew": "השר שפירא",
+    "count": "11"
+  },
+  {
+    "street1_hebrew": "הרב בר שאול",
+    "count": "11"
+  },
+  {
+    "street1_hebrew": "מסריק",
+    "count": "11"
+  },
+  {
+    "street1_hebrew": "קרן היסוד",
+    "count": "10"
+  },
+  {
+    "street1_hebrew": "עגנון",
+    "count": "10"
+  },
+  {
+    "street1_hebrew": "טבנקין",
+    "count": "10"
+  },
+  {
+    "street1_hebrew": "יצחק שדה",
+    "count": "10"
+  },
+  {
+    "street1_hebrew": "ליבורנו",
+    "count": "10"
+  },
+  {
+    "street1_hebrew": "ישראל בן ציון",
+    "count": "9"
+  },
+  {
+    "street1_hebrew": "השקמה",
+    "count": "9"
+  },
+  {
+    "street1_hebrew": "הרב מימון",
+    "count": "9"
+  },
+  {
+    "street1_hebrew": "ניצנה",
+    "count": "9"
+  },
+  {
+    "street1_hebrew": "ההגנה",
+    "count": "8"
+  },
+  {
+    "street1_hebrew": "יהודה הלוי",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "העמל",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "רהב",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "חלמית",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "שרת משה",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "הרב קוק",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "בר יהודה",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "הגבול",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "השר פנקס",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "האורגים",
+    "count": "7"
+  },
+  {
+    "street1_hebrew": "סוקולוב",
+    "count": "6"
+  },
+  {
+    "street1_hebrew": "קריתי",
+    "count": "6"
+  },
+  {
+    "street1_hebrew": "שלום עליכם",
+    "count": "6"
+  },
+  {
+    "street1_hebrew": "כנרת",
+    "count": "6"
+  },
+  {
+    "street1_hebrew": "ברדיצ'ב אבא",
+    "count": "6"
+  },
+  {
+    "street1_hebrew": "פרלשטיין",
+    "count": "5"
+  },
+  {
+    "street1_hebrew": "הגבורים",
+    "count": "5"
+  },
+  {
+    "street1_hebrew": "הרב הרצוג",
+    "count": "5"
+  },
+  {
+    "street1_hebrew": "גנרל קניג פייר",
+    "count": "5"
+  },
+  {
+    "street1_hebrew": "רמז",
+    "count": "5"
+  },
+  {
+    "street1_hebrew": "ויצמן",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "יקואל מנחם",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "דרך מנחם בגין",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "ירקוני",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "רמב\"ם",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "ביאליק",
+    "count": "4"
+  },
+  {
+    "street1_hebrew": "אזור התעשיה",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "סנה משה",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "רבינוביץ'",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "ששת הימים",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "אש שלום",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "תנין",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "סנש חנה",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "יוסף הנשיא",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "ככר העצמאות",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "אצ\"ל",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "הכרמל",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "מוכרי הסיגריות",
+    "count": "3"
+  },
+  {
+    "street1_hebrew": "הפלמ\"ח",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "כביש גבול חולון",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "דקר",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "קבוץ גלויות",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "הגדוד העברי",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "רייק חביבה",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "אלתרמן",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "המסגר",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "סטרומה",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "השומר",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "הגבעות",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "הפועל",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "סולד הנרייטה",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "קדושי לוצק",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "הצנחנים",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "ברנר",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "בית וגן",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "אלמליח",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "התבור",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "הצפירה",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "מוהליבר",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "נגבה",
+    "count": "2"
+  },
+  {
+    "street1_hebrew": "צה\"ל",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "הרשת",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "אופיר",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "מודיליאני",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "מחרוזת",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "החלוצים",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "ד\"ר ניר נחום",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "אוסישקין",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "מייזל זלמן",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "סמ השרון",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "האדמו\"ר מבאבוב",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "העמדות",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "הדקל",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "שמעון הבורסקי",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "חוף הסלע",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "דליה",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "אזור חוף הים",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "שינדלר אוסקר",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "קלויזנר",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "פרץ",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "השלושה",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "זרובבל",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "דולפין",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "קדושי קהיר",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "הרב צבי יהודה",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "עליה ב'",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "גולומב",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "אילת",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "כובשי החרמון",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "בן יוסף שלמה",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "שפרבר חיים",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "המלאכה",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "רבי בנימין",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "הסוללים",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "החשמל",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "חצור",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "סמ הראשונים",
+    "count": "1"
+  },
+  {
+    "street1_hebrew": "ארזים",
+    "count": "1"
+  }
+]
