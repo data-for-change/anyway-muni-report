@@ -9,7 +9,7 @@ import { createStore, combineReducers, compose } from 'redux';
 
 // import firebase from 'firebase';
 
-import { HomePage, LoginPage } from './pages';
+import { HomePage } from './pages';
 import Layout from './Layout';
 import styles from './styles';
 import { ReactAdminTopLevel } from './react-admin/ReactAdmin';
@@ -46,13 +46,6 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Switch>
-            <Route
-              exact
-              path="/login"
-              render={withRoot(
-                withStyles(styles)(routProps => <LoginPage {...routProps} />)
-              )}
-            />
             <Route
               exact
               path="/"
