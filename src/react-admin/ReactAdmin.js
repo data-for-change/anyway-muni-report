@@ -3,6 +3,10 @@ import { Admin, Resource } from 'react-admin';
 // import * as dataProvider from 'ra-postgrest-client';
 import dataProvider from 'aor-postgrest-client';
 
+import { createMuiTheme } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
+import green from '@material-ui/core/colors/green';
+
 import {
   MunicipalityList,
   MunicipalityEdit,
@@ -20,9 +24,16 @@ import {
 //   return new URLSearchParams(qs).toString();
 // };
 
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark' // Switching the dark mode on is a single property value change.
+  }
+});
+
 export function ReactAdminTopLevel() {
   return (
     <Admin
+      theme={theme}
       // dataProvider={dataProvider.postgrestClient(
       //   'https://anyway-postgrest.herokuapp.com'
       // )}
