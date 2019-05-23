@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from './withRoot';
@@ -43,7 +42,6 @@ const store = createStoreWithFirebase(rootReducer, initialState);
 
 class App extends Component {
   render() {
-    const { classes } = this.props;
     return (
       <Provider store={store}>
         <Router>
@@ -51,24 +49,22 @@ class App extends Component {
             <Route
               exact
               path="/login"
-              render={routProps => (
-                <LoginPage {...routProps} classes={classes} />
+              render={withRoot(
+                withStyles(styles)(routProps => <LoginPage {...routProps} />)
               )}
             />
             <Route
               exact
               path="/"
-              render={routProps => (
-                <Layout classes={classes}>
-                  <HomePage {...routProps} classes={classes} />
-                </Layout>
+              render={withRoot(
+                withStyles(styles)(routProps => (
+                  <Layout classes={routProps.classes}>
+                    <HomePage {...routProps} />
+                  </Layout>
+                ))
               )}
             />
-            <Route
-              exact
-              path="/react-admin"
-              render={routProps => <ReactAdminTopLevel />}
-            />
+            <Route exact path="/react-admin" component={ReactAdminTopLevel} />
           </Switch>
         </Router>
       </Provider>
@@ -76,8 +72,4 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withRoot(withStyles(styles)(App));
+export default App;
