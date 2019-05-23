@@ -2,13 +2,9 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
-    "lib": [
-      "es2018",
-      "dom",
-      "dom.iterable"
-    ],
-    "allowJs": true,
-    "checkJs": true,
+    "lib": ["es2018", "dom", "dom.iterable"],
+    "allowJs": false,
+    "checkJs": false,
     "noEmit": true,
     "isolatedModules": true,
     "strict": true,
@@ -21,7 +17,5 @@
     "resolveJsonModule": true,
     "jsx": "preserve"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

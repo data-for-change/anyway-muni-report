@@ -1,18 +1,19 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { withStyles } from "@material-ui/core/styles";
-import withRoot from "./withRoot";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
+import withRoot from './withRoot';
 
-import { Provider } from "react-redux";
-import { createStore, combineReducers, compose } from "redux";
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, compose } from 'redux';
 // import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 
 // import firebase from 'firebase';
 
-import { HomePage, LoginPage } from "./pages";
-import Layout from "./Layout";
-import styles from "./styles";
+import { HomePage, LoginPage } from './pages';
+import Layout from './Layout';
+import styles from './styles';
+import { ReactAdminTopLevel } from './react-admin/ReactAdmin';
 
 // const firebaseConfig = {}
 
@@ -62,6 +63,11 @@ class App extends Component {
                   <HomePage {...routProps} classes={classes} />
                 </Layout>
               )}
+            />
+            <Route
+              exact
+              path="/react-admin"
+              render={routProps => <ReactAdminTopLevel />}
             />
           </Switch>
         </Router>

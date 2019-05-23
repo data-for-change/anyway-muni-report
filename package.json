@@ -2,18 +2,25 @@
   "name": "anyway-mun",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "dependencies": {
     "@expo/vector-icons": "^8.0.0",
     "@material-ui/core": "3.9.3",
     "@material-ui/icons": "3.0.2",
     "@nivo/line": "^0.56.0",
+    "aor-postgrest-client": "igorclark/react-admin-postgrest-client",
     "classnames": "^2.2.6",
     "firebase": "^5.7.1",
     "google-maps-react": "^2.0.2",
     "jss-rtl": "^0.2.3",
     "nivo": "^0.31.0",
     "prop-types": "15.7.2",
+    "ra-postgrest-client": "^0.1.3",
     "react": "16.8.6",
+    "react-admin": "^2.9.1",
     "react-dom": "16.8.6",
     "react-google-maps": "^9.4.5",
     "react-redux": "^6.0.0",
@@ -26,22 +33,26 @@
     "redux": "^4.0.1",
     "rimraf": "^2.6.3"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "yarn-deduplicate": "yarn-deduplicate yarn.lock -s fewer"
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "_production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "production": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "main": "index.js",
   "repository": "https://github.com/ronish31/anyway-mun.git",
   "author": "ronish31 <ronish31@gmail.com>",
