@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
-import Grid from "@material-ui/core/Grid";
+import React, { Component } from 'react';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import Grid from '@material-ui/core/Grid';
 
 import AccidentsByAge from './AccidentsByAge';
 import AccidentsByYear from './AccidentsByYear';
@@ -16,7 +16,7 @@ class HomePage extends Component {
       <div>
         <Card
           className={classes.card}
-          style={{ marginBottom: "20px", height: "400px" }}
+          style={{ marginBottom: '20px', height: '400px' }}
         >
           <CardContent>
             <Map
@@ -29,7 +29,7 @@ class HomePage extends Component {
             >
               <Marker
                 onClick={this.onMarkerClick}
-                name={"Current location"}
+                name={'Current location'}
                 position={{ lat: 32.0126483, lng: 34.7412131 }}
               />
 
@@ -42,30 +42,26 @@ class HomePage extends Component {
 
         <Grid container spacing={24}>
           <Grid item md>
-            <Card style={{ marginBottom: "10px", height: "300px" }}>
-              <AccidentsByStreet />
-
+            <Card style={{ marginBottom: '10px', height: '300px' }}>
+              <AccidentsByStreet yishuv_symbol={6200} />
             </Card>
           </Grid>
 
           <Grid item md>
-            <Card style={{ marginBottom: "10px", height: "300px" }}>
-                <AccidentsByAge />
+            <Card style={{ marginBottom: '10px', height: '300px' }}>
+              <AccidentsByAge />
             </Card>
           </Grid>
-          </Grid>
+        </Grid>
 
-          <Grid container spacing={24}>
+        <Grid container spacing={24}>
           <Grid item md>
-            <Card style={{ marginBottom: "10px", height: "300px" }}>
-              <AccidentsByYear />
-
+            <Card style={{ marginBottom: '10px', height: '300px' }}>
+              <AccidentsByYear yishuv_symbol={6200} />
             </Card>
           </Grid>
           <Grid item md>
-            <Card style={{ marginBottom: "10px", height: "300px" }} >
-
-            </Card>
+            <Card style={{ marginBottom: '10px', height: '300px' }} />
           </Grid>
         </Grid>
       </div>
@@ -74,9 +70,5 @@ class HomePage extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyBpOmft-UskZsAQth9vNl0fN6EXaRR6dZc"
+  apiKey: 'AIzaSyBpOmft-UskZsAQth9vNl0fN6EXaRR6dZc'
 })(HomePage);
-
-
-
- 
