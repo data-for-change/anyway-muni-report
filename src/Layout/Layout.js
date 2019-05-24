@@ -1,34 +1,34 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import ListItemHoverable from "./ListItemHoverable";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import ListItemHoverable from './ListItemHoverable';
 
-import List from "@material-ui/core/List";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
-import Divider from "@material-ui/core/Divider";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import SettingsIcon from "@material-ui/icons/Settings";
-import PlaceIcon from "@material-ui/icons/Map";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import HomeIcon from "@material-ui/icons/Home";
-import TimelineIcon from "@material-ui/icons/Timeline";
-import BusinessIcon from "@material-ui/icons/Business";
-import classNames from "classnames";
-import pic from "./Bat-Yam.png";
-import Page from "./Page";
-const green = "#39D1B4";
+import List from '@material-ui/core/List';
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
+import Divider from '@material-ui/core/Divider';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import SettingsIcon from '@material-ui/icons/Settings';
+import PlaceIcon from '@material-ui/icons/Map';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import HomeIcon from '@material-ui/icons/Home';
+import TimelineIcon from '@material-ui/icons/Timeline';
+import BusinessIcon from '@material-ui/icons/Business';
+import classNames from 'classnames';
+import pic from './Bat-Yam.png';
+import Page from './Page';
+const green = '#39D1B4';
 
 const MenuButtons = {
   button1: {
     icon: <BusinessIcon />,
     title: "דו'ח עירוני",
     divider: true,
-    marginBottom: "0px",
-    marginTop: "0px"
+    marginBottom: '0px',
+    marginTop: '0px'
     //path:
   }
 
@@ -88,7 +88,7 @@ class Layout extends Component {
     const { open } = this.state;
     const MenuElements = Object.values(MenuButtons).map((value, index) => {
       const dividerElement = value.divider ? (
-        <Divider key={index + "divider"} />
+        <Divider key={index + 'divider'} />
       ) : null;
       return [
         <ListItemHoverable
@@ -106,12 +106,12 @@ class Layout extends Component {
       React.cloneElement(child, { open: this.state.open, classes: classes })
     );
     const citySymbolStyle = {
-      textAlign: "center",
-      marginBottom: "10px",
-      marginTop: "10px"
+      textAlign: 'center',
+      marginBottom: '10px',
+      marginTop: '10px'
     };
     return (
-      <div>
+      <div style={{ direction: 'rtl' }}>
         <AppBar
           position="fixed"
           className={classNames(classes.appBar, {
@@ -133,10 +133,9 @@ class Layout extends Component {
             <a href="http://localhost:3000/login">
               <HomeIcon
                 style={{
-                  cursor: "pointer",
-                  position: "relative",
-                  left: "-1300px"
-                  
+                  cursor: 'pointer',
+                  position: 'relative',
+                  left: '-1300px'
                 }}
               />
             </a>

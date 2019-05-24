@@ -3,20 +3,11 @@ import React from 'react';
 import {
   List,
   Datagrid,
-  Edit,
-  Create,
-  SimpleForm,
-  DateField,
   TextField,
-  EditButton,
-  DisabledInput,
   TextInput,
-  LongTextInput,
-  DateInput,
   Filter,
   Show,
   SimpleShowLayout,
-  RichTextField,
   FunctionField
 } from 'react-admin';
 import { LocationCity } from '@material-ui/icons';
@@ -60,12 +51,12 @@ export const MunicipalityList = props => (
 );
 
 const MunicipalityTitle = ({ record }) => {
-  return <span>Municipality {record ? `"${record.title}"` : ''}</span>;
+  return <span>Municipality {record ? `"${record.MUN_HEB}"` : ''}</span>;
 };
 
 export const MunicipalityShow = props => {
   return (
-    <Show {...props}>
+    <Show title={<MunicipalityTitle />} {...props}>
       <SimpleShowLayout>
         <TextField source="id" />
         <TextField source="osm_id" />

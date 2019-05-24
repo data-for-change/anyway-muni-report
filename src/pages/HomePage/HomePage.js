@@ -16,9 +16,9 @@ class HomePage extends Component {
       <div>
         <Card
           className={classes.card}
-          style={{ marginBottom: '20px', height: '400px' }}
+          style={{ marginBottom: '20px', height: '400px', padding: 0 }}
         >
-          <CardContent>
+          <CardContent style={{ padding: 0 }}>
             <Map
               google={this.props.google}
               zoom={14}

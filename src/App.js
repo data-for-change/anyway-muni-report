@@ -48,7 +48,7 @@ class App extends Component {
           <Switch>
             <Route
               exact
-              path="/"
+              path="/municipality-page"
               render={withRoot(
                 withStyles(styles)(routProps => (
                   <Layout classes={routProps.classes}>
@@ -57,7 +57,7 @@ class App extends Component {
                 ))
               )}
             />
-            <Route exact path="/react-admin" component={ReactAdminTopLevel} />
+            <Route exact path="/" component={ReactAdminTopLevel} />
           </Switch>
         </Router>
       </Provider>

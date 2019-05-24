@@ -17,7 +17,7 @@ const formattedData = dataToFormat => {
   }));
 };
 
-function AccidentsByAge({ yishuv_symbol }) {
+function AccidentsByYear({ yishuv_symbol }) {
   const qs = new URLSearchParams();
 
   qs.append('injury_severity', 'gt.0');
@@ -47,4 +47,4 @@ function AccidentsByAge({ yishuv_symbol }) {
   );
 }
 
-export default AccidentsByAge;
+export default AccidentsByYear;

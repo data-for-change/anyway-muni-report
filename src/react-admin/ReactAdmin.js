@@ -11,6 +11,8 @@ import {
   MunicipalityShow
 } from './municipalities';
 
+import { YishuvList, YishuvIcon, YishuvShow } from './yishuvim';
+
 import somecss from './somecss.module.css';
 
 console.log(somecss.asd);
@@ -33,10 +35,16 @@ export function ReactAdminTopLevel() {
       dataProvider={dataProvider('https://anyway-postgrest.herokuapp.com')}
     >
       <Resource
+        options={{ label: 'Yishuvim' }}
+        name="yishuvim_list_by_distinct_on_markers_hebrew_materialized"
+        list={YishuvList}
+        icon={YishuvIcon}
+        show={YishuvShow}
+      />
+      <Resource
+        options={{ label: 'Municipalities' }}
         name="municipalities"
         list={MunicipalityList}
-        // edit={MunicipalityEdit}
-        // create={MunicipalityCreate}
         icon={MunicipalityIcon}
         show={MunicipalityShow}
       />

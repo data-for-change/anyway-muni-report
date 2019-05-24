@@ -31,10 +31,30 @@ function AccidentsByStreet({ yishuv_symbol }) {
   return (
     <Table
       columns={[
-        { Header: 'שנה', accessor: 'accident_year' },
-        { Header: 'רחוב', accessor: 'street1_hebrew' },
-        { Header: 'מספּר תאונות', accessor: 'count' }
+        {
+          Header: 'רחוב',
+          columns: [
+            { Header: 'רחוב', id: 'street1_hebrew', accessor: 'street1_hebrew' }
+          ]
+        },
+        {
+          Header: 'מידע',
+          columns: [
+            {
+              id: 'accident_year',
+              Header: 'שנה',
+              accessor: 'accident_year'
+            },
+            {
+              id: 'count',
+              Header: 'מספּר תאונות',
+              accessor: 'count',
+              aggregate: vals => vals.reduce((a, b) => a + b, 0)
+            }
+          ]
+        }
       ]}
+      pivotBy={['street1_hebrew']}
       data={data}
     />
   );
