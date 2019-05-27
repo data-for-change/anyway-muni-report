@@ -11,27 +11,27 @@ const theme = createMuiTheme({
   overrides: {
     MuiCardContent: {
       root: {
-        padding: 0,
-      },
-    },
+        padding: 0
+      }
+    }
   },
   direction: 'rtl',
   palette: {
     primary: {
       light: blue[300],
       main: blue[500],
-      dark: blue[700],
+      dark: blue[700]
     },
     secondary: {
       light: green[300],
       main: green[500],
-      dark: green[700],
-    },
+      dark: green[700]
+    }
   },
   typography: {
     //font: "sans-serif",
-    useNextVariants: true,
-  },
+    useNextVariants: true
+  }
 });
 
 function withRoot(Component) {
