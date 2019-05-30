@@ -31,6 +31,6 @@ class App extends Component {
   }
 }
 
-const hotApp = hot(App);
+// const hotApp = hot(App);
 
-export { hotApp as default };
+export { App as default };
