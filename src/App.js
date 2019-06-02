@@ -1,4 +1,4 @@
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader/root';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
@@ -31,6 +31,6 @@ class App extends Component {
   }
 }
 
-// const hotApp = hot(App);
+const hotApp = hot(App);
 
-export { App as default };
+export { hotApp as default };

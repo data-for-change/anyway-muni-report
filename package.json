@@ -30,7 +30,7 @@
     "react-dom": "npm:@hot-loader/react-dom",
     "react-google-maps": "^9.4.5",
     "react-hot-loader": "^4.8.8",
-    "react-router-dom": "^4.3.1",
+    "react-router-dom": "^4",
     "react-scripts": "3.0.1",
     "react-table": "^6.9.2",
     "rimraf": "^2.6.3"
@@ -60,7 +60,7 @@
   "author": "ronish31 <ronish31@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/googlemaps": "^3.36.0",
+    "@types/googlemaps": "^3.36.2",
     "@types/jest": "^24.0.13",
     "@types/markerclustererplus": "^2.1.33",
     "@types/node": "^8",
@@ -70,7 +70,7 @@
     "husky": "^2.3.0",
     "prettier": "^1.17.1",
     "prettier-check": "^2.0.0",
-    "typescript": "^3.5.1",
+    "typescript": "^3.4.5",
     "yarn-deduplicate": "^1.1.1"
   },
   "resolutions": {
