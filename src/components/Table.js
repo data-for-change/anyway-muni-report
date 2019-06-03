@@ -1,24 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ReactTable from "react-table";
+import ReactTable from 'react-table';
 
 //import styles
-import "react-table/react-table.css";
-import "./Table.css";
+import 'react-table/react-table.css';
+import './Table.css';
 
 export default class Table extends Component {
-
-    state = {
-        height: 0
-    }
+  state = {
+    height: 0
+  };
 
   componentDidMount() {
-      this.setState({height: ReactDOM.findDOMNode(this).parentNode.clientHeight })
+    this.setState({
+      height: ReactDOM.findDOMNode(this).parentNode.clientHeight
+    });
   }
 
   render() {
-    const { columns, data } = this.props;
-    const { height } = this.state; 
+    const { columns, data, pivotBy } = this.props;
+    const { height } = this.state;
 
     return (
       <ReactTable
@@ -29,11 +30,12 @@ export default class Table extends Component {
         showPagination={false}
         minRows={5}
         style={{
-          height// This will force the table body to overflow and scroll, since there is not enough room
+          height // This will force the table body to overflow and scroll, since there is not enough room
         }}
         resizable={false}
         className="-striped -highlight"
         noDataText="No data found"
+        pivotBy={pivotBy}
       />
     );
   }

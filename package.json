@@ -2,56 +2,78 @@
   "name": "anyway-mun",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@expo/vector-icons": "^8.0.0",
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "latest",
-    "@nivo/line": "^0.56.0",
-    "classnames": "^2.2.6",
-    "expo": "^31.0.6",
-    "firebase": "^5.7.1",
-    "google-maps-react": "^2.0.2",
-    "jss-rtl": "^0.2.3",
-    "nivo": "^0.31.0",
-    "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-google-maps": "^9.4.5",
-    "react-redux": "^6.0.0",
-    "react-redux-firebase": "^2.2.5",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "latest",
-    "react-table": "^6.9.2",
-    "react-tabulator": "^0.9.1",
-    "react-virtualized": "^9.21.0",
-    "redux": "^4.0.1",
-    "rimraf": "^2.6.3"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx 'src'",
+    "prettier-check": "prettier-check src/**/*.{js,jsx,ts,tsx,css,scss}",
+    "prettier-fix": "prettier src/**/*.{js,jsx,ts,tsx,css,scss} --write",
+    "yarn-deduplicate": "yarn-deduplicate -s fewer"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint && yarn prettier-check"
+    }
+  },
+  "dependencies": {
+    "@material-ui/core": "^1",
+    "@material-ui/icons": "^1",
+    "@nivo/line": "^0.56.0",
+    "aor-postgrest-client": "igorclark/react-admin-postgrest-client",
+    "classnames": "^2.2.6",
+    "google-maps-react": "^2.0.2",
+    "nivo": "^0.31.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-admin": "^2.9.2",
+    "react-async": "^6.2.0",
+    "react-dom": "npm:@hot-loader/react-dom",
+    "react-google-maps": "^9.4.5",
+    "react-hot-loader": "^4.8.8",
+    "react-router-dom": "^4",
+    "react-scripts": "3.0.1",
+    "react-table": "^6.9.2",
+    "rimraf": "^2.6.3"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "_production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "production": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "main": "index.js",
   "repository": "https://github.com/ronish31/anyway-mun.git",
   "author": "ronish31 <ronish31@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.2.3"
+    "@types/googlemaps": "^3.36.2",
+    "@types/jest": "^24.0.13",
+    "@types/markerclustererplus": "^2.1.33",
+    "@types/node": "^8",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.3",
+    "husky": "^2.3.0",
+    "prettier": "^1.17.1",
+    "prettier-check": "^2.0.0",
+    "typescript": "^3.4.5",
+    "yarn-deduplicate": "^1.1.1"
   },
-  "rnpm": {
-    "assets": [
-      "./assets/fonts"
-    ]
+  "resolutions": {
+    "babel-preset-react-app": "npm:babel-preset-react-app-with-rhl"
   }
 }

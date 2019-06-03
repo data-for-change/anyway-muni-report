@@ -1,5 +1,5 @@
-import React from "react";
-import { ResponsivePie } from "nivo";
+import React from 'react';
+import { ResponsivePie } from 'nivo';
 
 const Chart = ({ data }) => {
   //create a fill pattern (dots or line) for every third pie slice
@@ -11,14 +11,14 @@ const Chart = ({ data }) => {
           match: {
             id: `${data[i].id}`
           },
-          id: "dots"
+          id: 'dots'
         });
       } else if (i % 3 === 0) {
         fill.push({
           match: {
             id: `${data[i].id}`
           },
-          id: "lines"
+          id: 'lines'
         });
       }
     });
@@ -57,19 +57,19 @@ const Chart = ({ data }) => {
       motionDamping={15}
       defs={[
         {
-          id: "dots",
-          type: "patternDots",
-          background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
+          id: 'dots',
+          type: 'patternDots',
+          background: 'inherit',
+          color: 'rgba(255, 255, 255, 0.3)',
           size: 4,
           padding: 1,
           stagger: true
         },
         {
-          id: "lines",
-          type: "patternLines",
-          background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
+          id: 'lines',
+          type: 'patternLines',
+          background: 'inherit',
+          color: 'rgba(255, 255, 255, 0.3)',
           rotation: -45,
           lineWidth: 6,
           spacing: 10

@@ -1,0 +1,9 @@
+[build]
+base = ""
+publish = "build/"
+command = "yarn build"
+
+[[redirects]]
+  from = "/react-admin"
+  to = " /index.html"
+  status = 200

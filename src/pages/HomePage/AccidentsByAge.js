@@ -11,10 +11,10 @@ function AccidentsByAge() {
   }));
 
   return (
-    <React.Fragment>
+    <>
       <h3 style={{ textAlign: "center" }}>Number of Accidents by Age Group</h3>
       <PieChart data={formattedData} />
-    </React.Fragment>
+    </>
   );
 }
 
