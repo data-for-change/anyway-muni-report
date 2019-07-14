@@ -1,0 +1,84 @@
+service: foranyway # NOTE: Don't put the word "google" in here
+
+provider:
+  name: google
+  stage: dev
+  # this is actually AWS value. google's is python37. but it makes the serverless-python-requirements plugin to work
+  runtime: python3.7
+  region: europe-west1
+  project: anyway-hasadna
+  # The GCF credentials can be a little tricky to set up. Luckily we've documented this for you here:
+  # https://serverless.com/framework/docs/providers/google/guide/credentials/
+  #
+  # the path to the credentials file needs to be absolute
+  credentials: ~/.gcloud/anyway-hasadna-deployer.json
+
+plugins:
+  - serverless-google-cloudfunctions
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+
+# needs more granular excluding in production as only the serverless provider npm
+# package should be excluded (and not the whole node_modules directory)
+package:
+  exclude:
+    # - node_modules/**
+    - .gitignore
+    - .git/**
+    - yarn.lock
+
+functions:
+  first:
+    handler: http
+    runtime: nodejs10
+    events:
+      - http: hello
+
+  first-python:
+    handler: httppython
+    runtime: python37
+    events:
+      - http: hello-python
+  # NOTE: the following uses an "event" event (pubSub event in this case).
+  # Please create the corresponding resources in the Google Cloud
+  # before deploying this service through Serverless
+  every-minute:
+    handler: everyMinute
+    runtime: nodejs10
+    events:
+      - event:
+          eventType: providers/cloud.pubsub/eventTypes/topic.publish
+          resource: projects/${self:provider.project}/topics/${self:provider.stage}-every-minute
+
+resources:
+  imports:
+    - path: templates/pubsub/pubsub.py
+      name: pubsub.py
+
+    - name: ${self:provider.project}-${self:provider.stage}-pubsub
+      type: pubsub.py
+      properties:
+        topic: ${self:provider.stage}-every-minute
+        # accessControl:
+        #   - role: roles/pubsub.subscriber
+        #     members:
+        #       - user:demo@user.com
+        # subscriptions:
+        #   - name: first-subscription
+        #     accessControl:
+        #       - role: roles/pubsub.subscriber
+        #         members:
+        #           - user:demo@user.com
+        #   - name: second-subscription
+        #     ackDeadlineSeconds: 15
+# you can define resources, templates etc. the same way you would in a
+# Google Cloud deployment configuration
+#resources:
+#  resources:
+#    - type: storage.v1.bucket
+#      name: my-serverless-service-bucket
+#  imports:
+#    - path: my_template.jinja
